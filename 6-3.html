@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            margin: 0;
+            background-color: maroon;
+        }
+        #main{
+            display: flex;
+            flex: 1;
+        }
+        #main>aside{
+            flex: 0 0 20vw;
+            background-color: teal;
+            order: 2;
+            padding: 1em;
+            margin: 0.5em;
+        }
+        #main>article{
+            flex: 1;
+            order: 1;
+            padding: 200px 270px 10px;
+            margin: 0.5em;
+            background-color: lightsalmon;
+        }     
+        img{
+            border: pink solid;
+            width: 150px;
+        }
+        p,aside,header,footer{
+            text-align: center;
+            font-family: sans-serif;
+            font-weight: bold;
+            color: lightslategrey;
+        }
+        header,footer{
+            background-color: khaki;
+            height: 10vh;
+            padding: 1em;
+            margin: 0.5em;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <div id="main">
+        <aside>Aside</aside>
+        <article>
+            <p>Article</p>
+            <img class="image1" src="haji (1).png"  alt="">
+            <img class="image2" src="doa.png"  alt="">
+            <img class="image3" src="solat.png"  alt="">
+        </article>
+    </div>
+    <footer>Footer</footer>
+</body>
+</html>
